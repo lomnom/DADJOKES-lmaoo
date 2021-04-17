@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DAD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v9-uL-zb3">
+                                <rect key="frame" x="20" y="148" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJC-1Q-45L">
+                                <rect key="frame" x="20" y="205" width="374" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM4-YC-Sat">
+                                <rect key="frame" x="20" y="176" width="374" height="112"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QJC-1Q-45L" secondAttribute="bottom" constant="602" id="0Q1-3t-1xl"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1EH-1y-woj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HM4-YC-Sat" secondAttribute="bottom" constant="574" id="Dsh-rv-AUz"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="trailing" secondItem="QJC-1Q-45L" secondAttribute="trailing" id="NQT-2v-xe3"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RLk-Xl-j4s"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="leading" secondItem="1v9-uL-zb3" secondAttribute="leading" id="TIt-nq-uKA"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="trailing" secondItem="1v9-uL-zb3" secondAttribute="trailing" id="TSx-12-hDG"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="centerY" secondItem="QJC-1Q-45L" secondAttribute="centerY" id="bCR-yv-ZUu"/>
+                            <constraint firstItem="QJC-1Q-45L" firstAttribute="top" secondItem="1v9-uL-zb3" secondAttribute="bottom" constant="8" id="caT-Th-z23"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="eh5-rG-z11"/>
+                            <constraint firstItem="HM4-YC-Sat" firstAttribute="leading" secondItem="QJC-1Q-45L" secondAttribute="leading" id="f8n-KO-wdj"/>
+                            <constraint firstItem="1v9-uL-zb3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="rVj-lr-knK"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="apx-kQ-bLY" appends="YES" id="jyw-CV-umh"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="A" destination="QJC-1Q-45L" id="ycK-Ql-wBz"/>
+                        <outlet property="Q" destination="1v9-uL-zb3" id="pR1-fE-2e4"/>
+                        <outlet property="SINGLELINE" destination="HM4-YC-Sat" id="e9v-9R-38b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="apx-kQ-bLY">
+                    <connections>
+                        <action selector="NEW:" destination="BYZ-38-t0r" id="wpx-ow-9Et"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
